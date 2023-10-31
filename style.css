@@ -1,45 +1,51 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #b80303;
-    color: #fff;
+.image-with-text {
+    position: relative;
+    height: 100vh;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 20px;
+    color: rgb(15, 15, 15);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0px;
 }
 
-/* Estilos para la lista de carreras */
-#carreras ul {
+ul#carreras-list {
     list-style: none;
     padding: 0;
+    margin-top: 260px; /* Aumenta este valor para mover los enlaces hacia abajo */
+    text-align: left;
 }
 
-#carreras li {
-    margin-bottom: 10px;
+ul#carreras-list li {
+    margin-bottom: 40px;
 }
 
-#carreras a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+ul#carreras-list a {
+    font-size: 18px; /* Ajusta este valor para cambiar el tamaño del texto */
+    color: #fafbfc; /* Cambia este valor al color que desees */
 }
 
-#carreras a:hover {
-    color: #0077b6;
+#imagen h2 {
+    font-size: 36px;
 }
 
-/* Estilos para la descripción de la carrera */
-#descripcion-carrera {
-    margin-top: 20px;
-}
+
 
