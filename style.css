@@ -1,48 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;   /* se declara el tipo de fuente utilizada para la pagina */
+    background-color: #f4f4f4;     /* se define el color de fondo de la pagina */
+    margin: 0;    /* se define encarga de eliminar espacios no deseados (margenes y rellenos) */
+    padding: 0;  /* se define encarga de eliminar espacios no deseados (margenes y rellenos) */
 }
 
 .image-with-text {
-    position: relative;
-    height: 100vh;
-    background-image: url('1.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: rgb(15, 15, 15);
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    padding: 50px 0;
+    position: relative;  /* defino la posicion */
+    height: 100vh;      /* defino la posicion */
+    background-image: url('1.jpg');  /* defino el fondo que voy a utilizar */
+    background-size: cover;  /* se ajusta la imagen para que cubra la pantalla */
+    background-position: center;  /* defino la poicion del fondo */
+    text-align: center;   /* centrañizo el texto */
+    color: rgb(15, 15, 15);  /* se define el color del texto */
+    font-size: 24px;  /* defino el tamaño del texto */
+    display: flex;  /* Hace que el contenido dentro de esta sección se comporte como un contenedor flexible */
+    align-items: center;  /* se utiliza para alinear los elementos secundarios (en este caso, el contenido dentro del fondo)*/
+    padding: 50px 0;  /* maneja el espacio de abajo (el cuanto se puede ver de la parte de abajo) */
 }
 
 
-.text-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 0px;
-}
+.text-overlay {  /* se utiliza para poder poner los links uno arriba del otro desde la parte izquierda del fondo */
+    display: flex;  /* defino que el contenedor sea flexible */
+    flex-direction: column; /* hace que los links se ordenen por columnas */
+    align-items: flex-start;  /* alinea los links por columnas desde el comienzo */
+    margin-left: 0px;   /* que aparezcan desde el lado izquierdo de la pantalla */
+} /* Establece un diseño de columna para los elementos dentro de la sección, alineándolos a la izquierda */
 
-ul#carreras-list {
-    list-style: none;
-    padding: 0;
+ul#carreras-list {  /* "ul" define que esta seccion solamente se va a ejecutar a lo que este dentro de ul dentro de HTML */
+    list-style: none;  /* elimina los marcadores visuales de la lista */
+    padding: 0;  /* elimina el espacio no deseado al rededor de la lista */
     margin-top: 260px; /* Aumenta este valor para mover los enlaces hacia abajo */
-    text-align: left;
+    text-align: left;  /* alinea los enlaces dentro de la lista a la izquierda */
+} /* En resumen, estas líneas de código aplican estilos específicos a una lista desordenada  */
+
+ul#carreras-list li {  /* esto afecta a todo lo que este dentro de la lista li de HTML */
+    margin-bottom: 40px;  /*  espacio de 40 píxeles entre la parte inferior de un elemento de la lista y el siguiente elemento de la lista. */
 }
 
-ul#carreras-list li {
-    margin-bottom: 40px;
-}
-
-ul#carreras-list a {
+ul#carreras-list a {  /* esto afecta a la lista "a" dentro de "ul" dentro de HTML */
     font-size: 18px; /* Ajusta este valor para cambiar el tamaño del texto */
     color: #fafbfc; /* Cambia este valor al color que desees */
 }
-
-
-
 
